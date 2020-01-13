@@ -24,7 +24,6 @@ namespace DB
         [StringLength(50)]
         public string SurName { get; set; }
 
-        [Required]
         [StringLength(50)]
         public string SecondName { get; set; }
 

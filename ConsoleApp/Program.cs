@@ -10,32 +10,40 @@ namespace ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int flag = 0;
+            int flag;
             do
             {
                 WriteLine("Выберите нужную функцию:\n" +
                     "1 - добавить запись\n" +
                     "2 - вывести записи\n" +
-                    "3 - выход");
+                    "3 - модифицировать запись\n" +
+                    "4 - удалить запись\n" +
+                    "5 - выход");
                 flag = int.Parse(ReadLine());
                 switch (flag)
                 {
                     case 1:
-                        Set.set();
+                        CreateClass.Set();
                         break;
                     case 2:
-                        Get.get();
+                        ReadClass.Get();
                         break;
                     case 3:
+                        UpdateClass.Update();
+                        break;
+                    case 4: 
+                        DeleteClass.Delete();
+                        break;
+                    case 5:
                         WriteLine("До свидания!");
                         break;
                     default:
                         WriteLine("Выберите рабочее значение");
                         break;
                 }
-            } while (flag != 3);
+            } while (flag != 5);
         } 
     }
 }

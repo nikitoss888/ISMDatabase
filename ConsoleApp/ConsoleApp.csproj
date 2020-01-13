@@ -53,10 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Get.cs" />
+    <Compile Include="DeleteClass.cs" />
+    <Compile Include="ReadClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Set.cs" />
+    <Compile Include="CreateClass.cs" />
+    <Compile Include="ToolsClass.cs" />
+    <Compile Include="UpdateClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
