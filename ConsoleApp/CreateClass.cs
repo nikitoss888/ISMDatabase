@@ -15,6 +15,7 @@ namespace ConsoleApp
             int flag;
             do
             {
+                Clear();
                 WriteLine("Что нужно сделать?\n" +
                     "1 - добавить пользователя\n" +
                     "2 - добавить категорию\n" +
@@ -23,6 +24,7 @@ namespace ConsoleApp
                     "5 - добавить заказ (1 товар)\n" +
                     "6 - вернуться на главное меню");
                 flag = int.Parse(ReadLine());
+                Clear();
                 switch (flag)
                 {
                     case 1:

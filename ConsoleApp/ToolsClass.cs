@@ -162,6 +162,9 @@ namespace ConsoleApp
             }
             return true;
         }
+
+        //----------------------------------------------------------------------------------------------------
+
         public static void Get_User()
         {
             using (DBModel db = new DBModel())
@@ -176,6 +179,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Get_Categ()
         {
@@ -191,6 +196,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Get_Comp()
         {
@@ -207,6 +214,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Get_Item()
         {
@@ -225,6 +234,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Get_Order()
         {
@@ -244,6 +255,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Set_User()
         {
@@ -257,6 +270,8 @@ namespace ConsoleApp
                 });
                 db.SaveChanges();
             }
+            WriteLine("Пользователь добавлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Set_Categ()
         {
@@ -269,6 +284,8 @@ namespace ConsoleApp
                 });
                 db.SaveChanges();
             }
+            WriteLine("Категория добавлена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Set_Comp()
         {
@@ -281,6 +298,8 @@ namespace ConsoleApp
                 });
                 db.SaveChanges();
             }
+            WriteLine("Компания добавлена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Set_Item()
         {
@@ -300,6 +319,8 @@ namespace ConsoleApp
                 else WriteLine("Нет доступных компаний или категорий для обязательного выбора. Пожалуйста, добавьте новые записи.\n" +
                     "Вас будет выброшено обратно в подменю\n");
             }
+            WriteLine("Товар добавлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Set_Order()
         {
@@ -313,6 +334,8 @@ namespace ConsoleApp
                 else WriteLine("Нет доступных пользователей или товаров для обязательного выбора. Пожалуйста, добавьте новые записи.\n" +
                     "Вас будет выброшено обратно в подменю\n");
             }
+            WriteLine("Заказ добавлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Upd_User()
         {
@@ -335,6 +358,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("Пользователь обновлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Upd_Categ()
         {
@@ -356,6 +381,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("Категория обновлена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Upd_Comp()
         {
@@ -377,6 +404,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("Компания обновлена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Upd_Item()
         {
@@ -400,6 +429,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("Товар обновлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Upd_Order()
         {
@@ -421,6 +452,8 @@ namespace ConsoleApp
                 }
                 else WriteLine("Записи не найдены");
             }
+            WriteLine("Заказ обновлен.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Delete_User()
         {
@@ -437,6 +470,8 @@ namespace ConsoleApp
                 db.Users.Remove(selected);
                 db.SaveChanges();
             }
+            WriteLine("Пользователь удалён.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Delete_Categ()
         {
@@ -453,6 +488,8 @@ namespace ConsoleApp
                 db.Categories.Remove(selected);
                 db.SaveChanges();
             }
+            WriteLine("Категория удалена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Delete_Comp()
         {
@@ -469,6 +506,8 @@ namespace ConsoleApp
                 db.Companies.Remove(selected);
                 db.SaveChanges();
             }
+            WriteLine("Компания удалена.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Delete_Item()
         {
@@ -485,6 +524,8 @@ namespace ConsoleApp
                 db.Items.Remove(selected);
                 db.SaveChanges();
             }
+            WriteLine("Товар удалён.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
         public static void Delete_Order()
         {
@@ -501,6 +542,8 @@ namespace ConsoleApp
                 db.Orders.Remove(selected);
                 db.SaveChanges();
             }
+            WriteLine("Товар удалён.\nНажмите любую кнопку для продолжения");
+            ReadKey();
         }
     }
 }

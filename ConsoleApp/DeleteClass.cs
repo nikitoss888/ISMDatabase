@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 using static ConsoleApp.ToolsClass;
-using DB;
 
 namespace ConsoleApp
 {
@@ -16,6 +15,7 @@ namespace ConsoleApp
             int flag;
             do
             {
+                Clear();
                 WriteLine("Что нужно сделать?\n" +
                     "1 - удалить пользователя\n" +
                     "2 - удалить категорию\n" +
@@ -24,6 +24,7 @@ namespace ConsoleApp
                     "5 - удалить заказ (1 товар)\n" +
                     "6 - вернуться на главное меню");
                 flag = int.Parse(ReadLine());
+                Clear();
                 switch (flag)
                 {
                     case 1:
